@@ -12,6 +12,5 @@ def generate_pwd():
                                   random.choice(SPECIAL_KEYS) +
                                   random.choice(LETTERS).upper()
                                   for i in range(pwd_length_ratio)])
-
     list_of_random_elements = random.sample(cadence_string, len(cadence_string))
     return ''.join(list_of_random_elements)
