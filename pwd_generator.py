@@ -4,8 +4,7 @@ import string
 
 def generated(upper_let=string.ascii_uppercase, low_let=string.ascii_lowercase, num=string.digits):
     pwd_length_ratio = 3
-    special_keys = ('!', '#', '$', '%', '&', "'", '(', ')', '*', '+', ',', '-', '.', '/', ':',
-                    '_', '<', '=', '>', '?', '@', ']', '[', '`', '^', '{', '|', '}', '~', '§')
+    special_keys = "!#$%&'()*+,-./:_<=>?@][`^{|}~"
     cadence_string = (''.join([random.choice(upper_let) +
                                random.choice(low_let) +
                                random.choice(num) +
